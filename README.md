@@ -1,5 +1,5 @@
 # thxgen-c
-thxgen, but in C++
+[thxgen](https://github.com/tymaker-team/thxgen), but in C++
 ## Building
 Enter the directory to which you have downloaded thxgen-c.
 

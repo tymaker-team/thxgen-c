@@ -16,7 +16,7 @@ int main()
     string h;
     string z;
 // STOP
-    cout << "Who are you writing to? ";
+    cout << "Who are you writing to? (First name only please) ";
     cin >> a;
     cout << "What gift did you get from " << a << "? e.g. 'shirt' ";
     cin >> b;

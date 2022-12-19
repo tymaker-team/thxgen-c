@@ -1,5 +1,5 @@
 # thxgen-c
-thxgen, but in C++
+Generates thank-you notes from information.
 ## Building
 Enter the directory to which you have downloaded thxgen-c.
 

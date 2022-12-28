@@ -1,5 +1,7 @@
 # thxgen-c
 [thxgen](https://github.com/tymaker-team/thxgen), but in C++
+
+G++ compiler required.
 ## Building
 Enter the directory to which you have downloaded thxgen-c.
 

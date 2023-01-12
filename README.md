@@ -7,4 +7,6 @@ Run `make` in the directory that thxgen is in.
 
 `cd bin`
 
+`make`
+
 Run `./thxgen`.

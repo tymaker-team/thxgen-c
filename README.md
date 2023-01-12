@@ -5,4 +5,6 @@ Requires GNU Make and CMake (You probably already have them both)
 ## Compilation
 Run `make` in the directory that thxgen is in.
 
-Run ./thxgen.
+`cd bin`
+
+Run `./thxgen`.

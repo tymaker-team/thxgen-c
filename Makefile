@@ -1,3 +1,3 @@
 all: build
 build:
-	cmake -Bbin
+	@cmake -Bbin

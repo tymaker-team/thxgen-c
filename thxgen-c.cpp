@@ -17,10 +17,10 @@ int main(int argc, char* argv[])
 char** c_arg = std::find_if(argv, argv + argc, is_config);
 char** h_arg = std::find_if(argv, argv + argc, is_help);
     if (h_arg != argv + argc) {
-        std::cout << "\033[1;37mthxgen-c help\n             Please answer the questions provided. Thx :)\033[0m" << std::endl;
+        std::cout << "\033[1;37mthxgen-c help\n             Please answer the questions provided. Thx :)\n              --config (Feaure not supported just yet)\033[0m" << std::endl;
     } 
     else if (c_arg != argv + argc) {
-        cout << "Feature in development. Come back later!";
+        cout << "Feature in development. Come back later!" << endl;
     }
     else {
 // Strings

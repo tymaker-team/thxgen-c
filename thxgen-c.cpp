@@ -1,9 +1,19 @@
 #include <iostream>
 #include <fstream>
+#include <string>
+#include <algorithm>
 using namespace std;
 
-int main()
+bool is_help(const char* arg) {
+    return std::string(arg) == "-h";
+}
+
+int main(int argc, char* argv[])
 {
+char** h_arg = std::find_if(argv, argv + argc, is_help);
+    if (h_arg != argv + argc) {
+        std::cout << "\033[1;37mthxgen-c help\n             Please answer the questions provided. Thx :)" << std::endl;
+    } else {
 // Strings
     string a;
     string asecname;
@@ -48,4 +58,4 @@ int main()
 
     cout << "\n";
     return 0;
-}
+}}

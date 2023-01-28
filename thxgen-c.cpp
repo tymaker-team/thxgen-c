@@ -8,12 +8,21 @@ bool is_help(const char* arg) {
     return std::string(arg) == "-h";
 }
 
+bool is_config(const char* arg) {
+    return std::string(arg) == "--config";
+}
+
 int main(int argc, char* argv[])
 {
+char** c_arg = std::find_if(argv, argv + argc, is_config);
 char** h_arg = std::find_if(argv, argv + argc, is_help);
     if (h_arg != argv + argc) {
         std::cout << "\033[1;37mthxgen-c help\n             Please answer the questions provided. Thx :)\033[0m" << std::endl;
-    } else {
+    } 
+    else if (c_arg != argv + argc) {
+        cout << "Feature in development. Come back later!";
+    }
+    else {
 // Strings
     string a;
     string asecname;

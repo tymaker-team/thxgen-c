@@ -1,0 +1,35 @@
+name: C++
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  Linux:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build
+      run: g++ -o thxgen thxgen-c.cpp
+    - name: Upload
+      uses: actions/upload-artifact@v4
+      with:
+        name: Linux
+        path: thxgen
+  macOS:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build
+      run: g++ -o thxgen thxgen-c.cpp
+    - name: Upload
+      uses: actions/upload-artifact@v4
+      with:
+        name: macOS
+        path: thxgen
